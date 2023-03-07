@@ -1,0 +1,14 @@
+.button {
+    border: none;
+    color: white;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 15px 10px;
+    cursor: pointer;
+    }
+    
+    .button1 {background-color:#d92626;} /* Green */
+    .button2 {background-color: #008CBA;margin-top:15px} /* Blue */

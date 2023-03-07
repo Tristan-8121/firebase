@@ -1,0 +1,109 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Đăng nhập hệ thống cảnh báo cháy rừng </title>
+<!-- <script src="js/jquery.min.js"></script> -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/style_matkhau.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- for-mobile-apps -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 	
+<!-- //for-mobile-apps -->
+<!--Google Fonts-->
+<!-- <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'> -->
+
+<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+<!-- font awesome 5.13.1 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDp-TKnSPn4ccP9Z56eK5RH8cpkVDDkJ1w",
+    authDomain: "test-7f080.firebaseapp.com",
+    projectId: "test-7f080",
+    storageBucket: "test-7f080.appspot.com",
+    messagingSenderId: "657002469624",
+    appId: "1:657002469624:web:9ccc1e1115f27c0cd1c30d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+<!--header start here-->
+<div class="header">
+		<div class="header-main">
+		       <h1 style="margin-top:-67px">CẢNH BÁO CHÁY RỪNG</h1>
+			<div class="header-bottom">
+				<div class="header-right w3agile">
+					
+					<div class="header-left-bottom agileinfo">
+						
+					<form id="myForm" class="form">
+						<input type="text" id="tendangnhap" class="form-input" placeholder="Tên đăng nhập"/>
+						<!-- <input type="password" id="ipnPassword" class="form-input" placeholder="Pass word"/> -->
+						<div class="input-group mb-3">
+                            <input type="password" class="form-control" id="ipnPassword" class="form-input" placeholder="Mật khẩu"/>
+                            <div style="margin-right:15px">
+	                            <div class="input-group-append">
+		                            <div class="btn btn-outline-secondary" type="button" id="btnPassword">
+		                                <span class="fas fa-eye"></span>
+		                            </div>
+	                            </div>
+	                        </div>
+                        </div>
+						<div class="Ghi nhớ mật khẩu">
+				            <span class="checkbox1">
+								   <label class="checkbox"><input type="checkbox" name="" checked=""><i> </i>Ghi nhớ mật khẩu</label>
+							</span>
+							<div class="forgot">
+							 	<h6><a href="#">Quên mật khẩu?</a></h6>
+							</div>
+							<div class="clear"> </div>
+					  	</div>
+					</form>	
+					<input style="margin-bottom:30px" onclick="send()" type="submit"  value="Login">	
+					<div style="margin-left: 100px; font-weight: bold"  id="login_service">
+						<a href="str1"></a>
+					</div>
+					<div class="header-left-top">
+						<div class="sign-up"> <h2>or</h2> </div>					
+					</div>
+					<div class="header-social wthree">
+						<a href="#" class="face"><h5>Facebook</h5></a>
+						<a href="#" class="twitt"><h5>Twitter</h5></a>
+					</div>
+				</div>
+				</div>
+			  
+			</div>
+		</div>
+</div>
+<!--header end here-->
+<div class="copyright">
+	<p style="margin-top:-30px;">© 2021 Forest fire warning. All rights reserved | Design by Nguyen Minh Duc </a></p>
+</div>
+<!--footer end here-->
+</body>
+<script src="js/login.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="js/firebase.js"></script>
+</html>

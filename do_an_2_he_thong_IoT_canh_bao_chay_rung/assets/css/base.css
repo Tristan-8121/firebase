@@ -1,0 +1,88 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color:#2cc4d3;
+    --border-color: #dbdbdb;
+   
+
+    --header-height: 140px;
+    --navbar-height: 34px;  
+}
+
+*{
+    box-sizing: inherit;
+}
+/*hack*/
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem; /*16px*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* RENSPONSIVE */
+/* grid{
+        row{
+         column{}
+    }
+} */ 
+/* tạo bố cục Grid cho trang web */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+    /* một hàng */
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+    /* chiếm 2 phần */
+.grid__column-2{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 15%;
+}
+
+    /* chiếm 10 phần trong 1 hàng */
+.grid__column-10{
+    padding-left: 200px;
+    padding-right: -50px;
+    width: 85%;
+}
+    /* trong hàng 10 chia làm  3 -? 100/3=33.33*/
+.grid__column-10-3{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3333%;
+}
+.grid__column-10-5{
+    padding-left:10px;
+    padding-right: 10px;
+    width: 50%;
+}
+
+/* BTN */
+.button {
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 10px;
+    cursor: pointer;
+    }
+    
+    .button1 {background-color: #4CAF50;margin-left:20px;} /* Green */
+    .button2 {background-color: #008CBA;margin-top:10px;margin-left:20px;} /* Blue */
+    .button3 {background-color: #008CBA;margin-top:13px;margin-left:30px;} /* Blue */

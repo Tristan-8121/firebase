@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- /////////////////////// -->
+<head>
+    <title>canh bao chay rung</title>
+    <meta charset="utf-8">
+    <!-- ------------------ -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/rounderslider.css">
+    <link rel="stylesheet" href="bootstrap-toggle.min_phongngu.css">
+
+    <!-- ---------------- -->
+    <!-- SLIDER -->
+    <!-- <link rel="stylesheet" href="./assets/css/rounderslider.css"> -->
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.1/css/all.min.css"> -->
+    <!--END SLIDER  -->
+
+    <!--BOOTSTRAP  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script> src = "./bootstrap.min.js"</script>
+    <!--END BOOTSTRAP  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+    <script>
+        var firebaseConfig = {
+        apiKey: "AIzaSyDp-TKnSPn4ccP9Z56eK5RH8cpkVDDkJ1w",
+        authDomain: "test-7f080.firebaseapp.com",
+        projectId: "test-7f080",
+        storageBucket: "test-7f080.appspot.com",
+        messagingSenderId: "657002469624",
+        appId: "1:657002469624:web:9ccc1e1115f27c0cd1c30d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- LƯU Ý CODE FIREBASE PHẢI ĐỂ SAU HÀM GỌI FIREBASE -->
+<script src="./javascript.js"></script>    
+
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header__full">
+                    <!-- <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img src="./assets/img/icon-garden1.png" alt="" class="header__logo-img">
+                        </a>
+                    </div> -->
+                    <div class="header__banner">
+                        <b>FOREST FIRE WARNING</b>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
+        <!-- BODY -->
+    <div class="menungang">
+        <div class="container">
+            <div class="row">
+                <div class="menu">
+                    <!-- Nav tabs -->
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">MỤC LỤC</a>
+                            </div>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="./khuvuctrungtam.html">KHU VỰC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"href="./khuvuc1.html"><b style="color:#5a6360">KHU VỰC 1</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"  href="./khuvuc2.html"><b style="color:#5a6360">KHU VỰC 2</b></a>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                    <div class="tab-content">
+                         <div class="tab-pane container active" id="home"></div>
+                         <div class="tab-pane container fade" id="menu1"></div>
+                         <div class="tab-pane container fade" id="menu2"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </div>
+    <div class="grid__column-10">
+        <div class="home-label">
+            <span class="home-label__name">KHU VỰC</span>
+        </div>
+        <div class="home-product">
+            <!-- GRID -> ROW -> COLUMN -->
+
+            <div class="grid__row">
+                <div class="grid__column-10-5">
+                    <div class="home-product-item">
+                        <center>
+                            <div class="card" style="width: 30rem; height: 30rem;">
+                                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                                <div class="card-body">
+                                    <a href="./khuvuc1.html" class="btn btn-primary">Show</a>
+                                    <h1 class="card-title">KHU VỰC 1</h1><p class="card-text" style="font-size:20px;">
+                                    Nhiệt độ :
+                                    <span id="hienNhietdo" ></span>
+                                    
+                                    </p>
+                                    <p class="card-text" style="font-size:20px;"> 
+                                    Độ ẩm : 
+                                       <!-- <P id='hienDoam'>DDSD</P> -->
+                                    <span id="hienDoam" ></span>
+
+                                    </p>
+                                    <p class="card-text" style="font-size:20px;">
+                                    khói :
+                                        <span id="hienkhoi"></span>
+                                        <!-- <input id="hienDen" > -->
+                                    </p>
+                                </div>
+                            </div>
+                        </center>
+
+
+                    </div>
+                    <!-- <div class="home-product-item__name">
+                        <h4 class="home-product-item__name--center">Home</h4>
+                    </div> -->
+                    <!-- <div class="home-product-btn">
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="100" value="1" class="slider" id="myRange">
+                            <p class="slider__value">Giá trị: <span id="value1"></span></p>
+                        </div>
+                    </div> -->
+
+                </div>
+                <div class="grid__column-10-5">
+                    <div class="home-product-item">
+                        <center>
+                            <div class="card" style="width: 30rem;height: 30rem;">
+                                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                                <div class="card-body">
+                                    <a href="./khuvuc2.html" class="btn btn-primary">Show</a>
+                                    <h1 class="card-title">KHU VỰC 2</h1>
+                                    <p class="card-text" style="font-size:20px">Nhiệt độ :
+                                        <span id='hienNhietdo_V'></span>
+                                    </p>
+                                    <p class="card-text" style="font-size:20px">Độ ẩm :
+                                        <span id='hienDoam_V'></span>
+                                    </p>
+                                    <p class="card-text" style="font-size:20px">khói :
+                                        <span id='hienKhoi_V'></span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </center>
+
+
+                    </div>
+                    <!-- <div class="home-product-item__name">
+                        <h4 class="home-product-item__name--center">Garden</h4>
+                    </div> -->
+                <!--     <div class="home-product-btn">
+                            <div class="slidecontainer">
+                                <input type="range" min="0" max="100" value="1" class="slider" id="myRange">
+                                <p class="slider__value">Giá trị: <span id="value1"></span></p>
+                              </div>
+                        </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- SLIDER_VALUE -->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+                                    
+<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+                                    
+<script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script> 
+
+<script src="./assets/js/khuvuctrungtam.js"></script>
+<!-- END SLIDER_VALUE -->
+
+
+</html>

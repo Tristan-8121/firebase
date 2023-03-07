@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CANH BAO CHAY RUNG</title>
+        <meta charset="utf-8">
+        <!-- ------------------ -->
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+        <!-- ---------------- -->
+        <!-- SLIDER -->
+    
+    
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+    
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.1/css/all.min.css">
+        <!--END SLIDER  -->
+    
+    <!--BOOTSTRAP  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script> src = "./bootstrap.min.js"</script>
+    <!--END BOOTSTRAP  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+        <script>
+            var firebaseConfig = {
+            apiKey: "AIzaSyDp-TKnSPn4ccP9Z56eK5RH8cpkVDDkJ1w",
+            authDomain: "test-7f080.firebaseapp.com",
+            projectId: "test-7f080",
+            storageBucket: "test-7f080.appspot.com",
+            messagingSenderId: "657002469624",
+            appId: "1:657002469624:web:9ccc1e1115f27c0cd1c30d"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <!-- LƯU Ý CODE FIREBASE PHẢI ĐỂ SAU HÀM GỌI FIREBASE -->
+        <script src="./javascript.js"></script>
+        <script src="./assets/js/main.js"></script>
+    
+    
+    </head>
+<body>
+    <div class="app">
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <div class="pos-f-t">
+                            <div class="collapse" id="navbarToggleExternalContent">
+                                <div class="bg-black p-4">
+                                    <ul class="navbar-nav" style="font-size:20px;">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./khuvuctrungtam.html"><span style="color:bisque">Khu vực</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./khuvuc1.html"></span><span style="color:bisque">Khu vực 1</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./khuvuc2.html"></span><span style="color:bisque">Khu vực 2</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__row app__content" style="width:120%">
+                            <nav class="navbar bg-black navbar-dark" style="margin-bottom:10px">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon" style="margin-top:-10px;"></span><span style="font-size:20px;margin-left: 10px;color:bisque;">Danh mục</span>
+                                </button>
+                            </nav>
+                        </div>
+                        <div class="grid__row app__content">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/img/anh_dep_3.gif" alt="description of gif" style="width:140%;height: 100%;"/>
+                            </div>
+                        </div>
+                        <div class="grid__row app__content">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/img/anh_dep_4.gif" alt="description of gif" style="width:140%;height: 100%;"/>
+                            </div>
+                        </div>  
+                    </div>
+
+
+                    <div class="grid__column-10">
+                        <div class="home-label">
+                            <span class="home-label__name">KHU VỰC 2</span>
+                        </div>
+                        <div class="home-product">
+                            <!-- GRID -> ROW -> COLUMN -->
+                            <div class="grid__row">
+                                <!-- product item -->
+
+
+                                <div class="grid__column-10-3">   
+                                    <div class="home-product-item">  
+                                        <center>                            
+                                            <div class="card">
+                                                <div id="sliderTronId_01" class="round-slider" style="margin-top: 25px; margin-left:30px;"></div>
+                                                <div class="card-body">
+                                                    <img class="card-img-top" src="./assets/img/nhietdo.jpg" alt="description of gif" style="width:40%;height: 40%;"/>
+                                                    <div class="nd"><b>NHIỆT ĐỘ</b></div>
+                                                </div>
+                                            </div>  
+                                        </center>  
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-10-3">
+                                    <div class="home-product-item">  
+                                        <center>                            
+                                            <div class="card">
+                                                <div id="sliderTronId_02" class="round-slider" style="margin-top: 25px; margin-left:30px;"></div>
+                                                <div class="card-body">
+                                                    <img class="card-img-top" src="./assets/img/doam.jpg" alt="description of gif" style="width:40%;height: 40%;"/>
+                                                    <div class="nd"><b>ĐỘ ẨM</b></div>
+                                                </div>
+                                            </div>  
+                                        </center>  
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-10-3">                                 
+                                     <div class="home-product-item">  
+                                        <center>                            
+                                            <div class="card">
+                                                <div id="sliderTronId_03" class="round-slider" style="margin-top: 25px; margin-left:30px;"></div>
+                                                <div class="card-body">
+                                                    <img class="card-img-top" src="./assets/img/khoi.png" alt="description of gif" style="width:40%;height: 40%;"/>
+                                                    <div class="nd"><b>KHÓI</b></div>
+                                                </div>
+                                            </div>  
+                                        </center>  
+                                    </div>
+                                </div>
+                                
+                                <div class="grid__column-10-3">
+                                    <div class="home-product-item">
+                                        <div class="card">
+                                            <div class="cb"><p>CẢNH BÁO</p></div>
+                                            <img id="mylamp_01" class="card-img-top" src="./assets/img/pic_bulboff.gif" alt="Card image" style="width:50%;margin-left: 63px;">
+                                            <div class="card-body" style="margin-left: 25px;">
+                                                <button class="button button2" id="mylamp_on_01">ON</button>
+                                                <button class="button button2" id="mylamp_off_01">OFF</button>
+                                          </div>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-10-5">                                    
+                                    <div class="home-product-item">    
+                                        <center style="font-size:18px;">                                                                                                <p class="labelghcolor labelgh">
+                                                Nhiệt độ giới hạn: 
+                                                <span id='hienpNhietdo'></span>
+                                            </p>
+                                            <p class="labelghcolor labelgh">
+                                                Độ ẩm giới hạn: 
+                                                <span id='hienpDoam'></span>
+                                            </p>
+                                            <p class="labelghcolor labelgh">
+                                                khói giới hạn: 
+                                                <span id='hienpkhoi'></span>
+                                            </p>
+                                        </center>
+                                        <div class="card" style="margin-top:20px;"> 
+                                           <div><b style="font-size:22px">GIÁ TRỊ NGƯỠNG</b></div>
+                                            <div class="card-body">
+                                                <div class="slidecontainer">
+                                                    <div><center>NHIỆT ĐỘ</center></div> 
+                                                    <span id="sliderNgangValue">0 </span>  
+                                                    <input type="range" min="0" max="100" value="0" class="slider" id="sliderNgangId"> 
+                                                </div> 
+                                                <div class="slidecontainer" style="margin-top:10px">
+                                                    <div><center>ĐỘ ẨM</center></div> 
+                                                    <span id="sliderNgangValue1">0 </span>  
+                                                    <input type="range" min="0" max="100" value="0" class="slider" id="sliderNgangId1">
+                                                </div>
+                                                <div class="slidecontainer" style="margin-top:10px"> 
+                                                    <div><center>KHÓI</center></div> 
+                                                    <span id="sliderNgangValue2">0 </span>  
+                                                    <input type="range" min="0" max="100" value="0" class="slider" id="sliderNgangId2">
+                                                </div>                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+<script src="./assets/js/khuvuc2.js"></script>
+</html>
